@@ -20,7 +20,10 @@
       and paste it above or below the others inside <section id="writing">.
       Update the exhibit number, title, metadata, abstract, and the
       text inside <div class="full-text">.
-   3. To change your status (e.g. "Baylor Senior" -> "J.D. Candidate"),
+   3. To add a job or internship, copy one <article class="role"> block
+      inside <section id="experience"> (newest at the top). Add the
+      <span class="role-now">Current</span> badge only for ongoing roles.
+   4. To change your status (e.g. "Baylor Senior" -> "J.D. Candidate"),
       edit the <span class="status-value"> near the top of the hero.
    ============================================================ */
 
@@ -449,6 +452,14 @@ details.reader[open] summary{ margin-bottom:.6rem; }
   align-self:start;
 }
 .feature-img img{ display:block; width:100%; height:auto; }
+.feature-title{
+  font-family:var(--display);
+  font-weight:600;
+  font-size:1.5rem;
+  line-height:1.25;
+  margin:0 0 .7rem;
+}
+.feature-meta{ margin-bottom:1.2rem; }
 .feature-body .abstract{ margin:0 0 1rem; color:var(--ink-soft); }
 .feature-body .abstract strong{ color:var(--ink); font-weight:600; }
 .feature-actions{ display:flex; flex-wrap:wrap; gap:.8rem; }
@@ -712,7 +723,7 @@ footer{
           <div class="role-when">
             <p class="role-date">Sept 2026 — Present</p>
             <p class="role-loc">Remote</p>
-          <span class="role-now">Current</span>
+            <span class="role-now">Current</span>
           </div>
           <div class="role-main">
             <h3>PLUS Communications</h3>
@@ -726,8 +737,9 @@ footer{
         </article>
         <article class="role">
           <div class="role-when">
-            <p class="role-date">Fall 2026</p>
+            <p class="role-date">Fall 2026 — Present</p>
             <p class="role-loc">Remote</p>
+            <span class="role-now">Current</span>
           </div>
           <div class="role-main">
             <h3>Mission Flight</h3>
@@ -744,7 +756,7 @@ footer{
           <div class="role-when">
             <p class="role-date">July 2026 — Present</p>
             <p class="role-loc">Remote</p>
-          <span class="role-now">Current</span>
+            <span class="role-now">Current</span>
           </div>
           <div class="role-main">
             <h3>OATH Network</h3>
@@ -778,7 +790,7 @@ footer{
           <div class="role-when">
             <p class="role-date">Aug 2024 — Present</p>
             <p class="role-loc">Waco, Texas</p>
-          <span class="role-now">Current</span>
+            <span class="role-now">Current</span>
           </div>
           <div class="role-main">
             <h3>W.R. Poage Legislative Library</h3>
@@ -802,7 +814,7 @@ footer{
         <span class="rule"></span>
       </div>
 
-      <!-- ============ EXHIBIT TEMPLATE — copy this whole <article> block to add a new sample ============ -->
+      <!-- ============ WRITING EXHIBITS (newest first) — copy any whole <article> block to add a new sample ============ -->
 
       <article class="exhibit">
         <div class="exhibit-head">
@@ -1018,7 +1030,7 @@ footer{
         </div>
       </article>
 
-      <!-- ============ END EXHIBIT TEMPLATE ============ -->
+      <!-- ============ END WRITING EXHIBITS ============ -->
 
     </section>
 
@@ -1036,8 +1048,8 @@ footer{
           </a>
           <div class="feature-body">
             <p class="exhibit-tag">Exhibit E — Civic Communications</p>
-            <h3 style="font-family:var(--display);font-weight:600;font-size:1.5rem;line-height:1.25;margin:0 0 .7rem;">“Be Heard Before They Vote”: OATH Network Outreach Flyer</h3>
-            <div class="exhibit-meta" style="margin-bottom:1.2rem;">
+            <h3 class="feature-title">“Be Heard Before They Vote”: OATH Network Outreach Flyer</h3>
+            <div class="exhibit-meta feature-meta">
               <span>OATH Network</span>
               <span>Legislative Affairs &amp; Communications</span>
               <span>2026</span>
